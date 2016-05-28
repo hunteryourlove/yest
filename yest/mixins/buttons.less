@@ -1,0 +1,22 @@
+// Button colors
+//.button-colors(@btn-blue-color;@btn-blue-bg;@btn-blue-border);
+.btn-colors(@color; @bg; @border){
+    color:@color;
+    background-color: @bg;
+    border-color: @border;
+    
+&:hover {
+    color: @color;
+    background-color: darken(@bg,10%);
+        border-color: darken(@border, 12%);
+  }
+}
+
+
+//Buttons size
+.btn-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  line-height: @line-height;
+  border-radius: @border-radius;
+}

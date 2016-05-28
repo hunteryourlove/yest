@@ -1,0 +1,36 @@
+//Base styles
+.btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+    .btn-size(@padding-vertical-base; @padding-horizontal-base; @font-size-base; @line-height-base; @btn-border-radius-base);
+    
+}
+.btn-def{
+    .btn-colors(@btn-def-color;@btn-def-bg;@btn-def-border);
+}
+//lightn green
+.btn-g{
+    .btn-colors(@btn-g-color;@btn-g-bg;@btn-g-border);
+}
+//light blue
+.btn-lb{
+    .btn-colors(@btn-lb-color;@btn-lb-bg;@btn-lb-border);   
+}
+//dark blue
+.btn-db{
+    .btn-colors(@btn-db-color;@btn-db-bg;@btn-db-border);   
+}
+
+
+//Button Sizes
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .btn-size(@padding-vertical-lg; @padding-horizontal-lg; @font-size-lg; @line-height-lg; @btn-border-radius-lg);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  .btn-size(@padding-vertical-sm; @padding-horizontal-sm; @font-size-sm; @line-height-sm; @btn-border-radius-sm);
+}
+.btn-xs {
+  .btn-size(@padding-vertical-xs; @padding-horizontal-xs; @font-size-sm; @line-height-sm; @btn-border-radius-sm);
+}
